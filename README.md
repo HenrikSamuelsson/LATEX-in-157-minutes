@@ -7,4 +7,4 @@ Tests and notes regarding the book "Latex in 157 minutes" written by Tobias Oeti
  - An example with sections [tex](Examples/Section_01_05/Article Example.tex) [pdf](Examples/Section_01_05/Article Example.pdf)  
 
 ## Chapter 2
-- A minimal LATEX File [tex](Examples/Section_02_04/Special Characters and Symbols.tex) [pdf](Examples/Section_02_04/Special Characters and Symbols.pdf)  
+- Special characters and symbols [tex](Examples/Section_02_04/Special Characters and Symbols.tex) [pdf](Examples/Section_02_04/Special Characters and Symbols.pdf)  
