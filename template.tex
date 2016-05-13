@@ -1,0 +1,46 @@
+\documentclass[titlepage = true]{scrartcl}
+\usepackage{graphicx}
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+\title{Title first row\\ Title second row}
+\author{Author Name}
+
+\begin{document}
+\maketitle
+\clearpage
+\setcounter{page}{1}
+\section{Summary}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac nibh vel felis ullamcorper accumsan. Sed vel mauris vitae ante volutpat tempor convallis malesuada justo. Proin orci nisl, ullamcorper nec est nec, dignissim euismod mi. Phasellus posuere, dolor sit amet fringilla lobortis, elit lectus volutpat ligula, molestie vehicula massa purus a eros. Praesent finibus odio quis est consequat, sed rutrum libero sodales. Morbi id aliquam ipsum, ac varius nunc. Quisque venenatis arcu eu ex tincidunt, in volutpat justo viverra. Nam tristique, nisl quis consequat hendrerit, erat sapien gravida leo, vitae luctus felis nibh ut lectus. Pellentesque porta leo eu elementum consectetur. Mauris eu consectetur purus. Sed tincidunt sem at scelerisque consectetur. Nunc interdum risus nec elementum aliquam. Praesent sodales, ipsum at luctus pretium, nunc velit porta odio, nec tempus dui dolor id orci. Vivamus at justo vitae est viverra aliquet eu vitae orci.
+
+Nulla quis orci hendrerit, congue eros sit amet, accumsan ante. Mauris facilisis mi sed lacus mollis, ac varius nulla ullamcorper. Nulla facilisi. Curabitur sodales mi vel ligula suscipit ullamcorper. Maecenas finibus lorem sed tortor fermentum, eget vulputate nunc commodo. Maecenas quam odio, semper non justo vitae, egestas porta ante. Nam dictum dapibus justo a hendrerit. Nunc posuere nibh ac tristique iaculis. Nam porta, nulla sit amet molestie suscipit, orci tellus tempor magna, ut ornare augue ex eget lectus.
+
+\section{Virtual RFID Reader}
+Nam at nulla tempus, bibendum libero ultrices, auctor sem. Quisque magna nibh, mattis id nunc et, elementum bibendum ex. Donec maximus dignissim magna, accumsan interdum metus ornare in. In hac habitasse platea dictumst. Nullam commodo tortor eget feugiat convallis. Proin in feugiat risus. Vestibulum a mauris faucibus, condimentum neque vehicula, hendrerit velit. In tincidunt facilisis libero, in porta tortor.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.8]{systemoverwiev.pdf}
+\caption{System overview}
+\end{center}
+\end{figure}
+ 
+Fusce a enim ut purus efficitur maximus. Aliquam euismod metus sed iaculis facilisis. Etiam dictum erat et neque facilisis ultricies. Donec at sodales sapien. Proin tristique elit felis, sollicitudin vulputate libero convallis porttitor. Duis ultrices, tellus gravida fringilla viverra, orci metus cursus metus, eget accumsan odio risus nec ligula. In hac habitasse platea dictumst. Sed dapibus interdum elit. Etiam nec sem ex. Praesent felis urna, maximus quis aliquet quis, commodo eu nulla. Curabitur auctor, erat sed faucibus elementum, mauris lacus fermentum nibh, ut tincidunt lorem nisi quis ligula.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.8]{virtualRFID.pdf}
+\caption{Visualization of the internal data base inside the virtual RFID module}
+\end{center}
+\end{figure}
+
+
+
+\section{Open Process Postal Organization}
+A fake postal organization called OPPO shall be added to the portal. This organization will have one single delivery man that has one single tag. All deliveries made in the open process will look like they have been made by this single delivery man. There will in reality be no way to see who made the actual delivery.
+
+The purpose of this construction is to have actual data in all field internally in the CCU. It will be safer to have some kind of real data instead of loads of null pointers that might disrupt the delivery flow in unforeseen ways.
+
+Note that a CCU that does not have have OPPO added as organization will not be able to be used for open process deliveries since the controller will not be able to find the tag data from the virtual RFID read in the internal CCU tag data base.
+
+The main intention of adding OPPO is to minimize development time and test time.
+
+\end{document}
