@@ -1,21 +1,35 @@
 \documentclass[]{scrartcl}
 \usepackage{fontspec}
+\usepackage{parskip}
+
 
 \usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+
+
+\definecolor{darkgray}{gray}{0.35}
 \renewcommand{\familydefault}{\sfdefault}
+\newcommand{\code}[2][ForestGreen]{\textcolor{#1}{\textit{#2}}}
 \begin{document}
 \begin{titlepage}
 	\raggedright
+	\null\vspace{5cm}
 	
-	\null\vspace{6cm}
-	{\Huge\ Combiplate CCU Protocol Specification\par}
-	\vspace{1cm}
-	{\huge\bfseries Pigeons love doves\par}
-	\vspace{2cm}
-	{\Large\itshape John Birdwatch\par}
-	\vfill
-	supervised by\par
-	Dr.~Mark \textsc{Brown}
+	\noindent\hrulefill\par
+	{\Huge\hspace{-0.3cm} Combiplate CCU Protocol Specification\par}
+	\noindent\hrulefill\par
+	
+	{\Large\today\par}
+	
+	\vspace{0.7 cm}
+	{\Large\code[darkgray]{Henrik Samuelsson}}
+	
+	
+
+
+	
+
+
 
 	\vfill
 
