@@ -1,28 +1,32 @@
 \documentclass[]{scrartcl}
 \usepackage{fontspec}
 \usepackage{parskip}
-
-
 \usepackage{graphicx}
+
+\usepackage[nodayofweek,level]{datetime}
+
+\newcommand{\mydate}{\formatdate{3}{6}{1994}}
+
+% colors
 \usepackage[usenames, dvipsnames]{color}
-
-
 \definecolor{darkgray}{gray}{0.35}
 \renewcommand{\familydefault}{\sfdefault}
-\newcommand{\code}[2][ForestGreen]{\textcolor{#1}{\textit{#2}}}
+\newcommand{\code}[2][Black]{\textcolor{#1}{\textit{#2}}}
+
 \begin{document}
 \begin{titlepage}
 	\raggedright
-	\null\vspace{5cm}
+	\null\vspace{4cm}
 	
 	\noindent\hrulefill\par
-	{\Huge\hspace{-0.3cm} Combiplate CCU Protocol Specification\par}
+	{\Huge\hspace{-0.3cm} Combiplate Latex Report Template\par}
 	\noindent\hrulefill\par
 	
-	{\Large\today\par}
+	%date
+	{\Large\ 24 May 2016\par}
 	
-	\vspace{0.7 cm}
-	{\Large\code[darkgray]{Henrik Samuelsson}}
+	\vspace{0.5 cm}
+	{\Large\code[darkgray]{Sven Svensson}}
 	
 	
 
@@ -34,6 +38,15 @@
 	\vfill
 
 % Bottom of the page
-	{\large \today\par}
+\hspace{8.5cm}
+\small
+	\begin{tabular}{ l l }
+		Address: & Combiplate AB \\ 
+		& Gjuterigatan 9 \\  
+		& 553 18 Jönköping \\
+		E-mail: & info@combiplate.com \\
+		Web: & combiplate.com	     
+	\end{tabular}
+
 \end{titlepage}
 \end{document}
